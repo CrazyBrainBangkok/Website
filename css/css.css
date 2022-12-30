@@ -1,0 +1,251 @@
+* {
+	scrollbar-color: white #9381cb;
+}
+
+html {
+	font-size: 150%;
+	font-family: Helvetica;
+}
+
+body {
+	display: grid;
+	background: #9381cb;
+	background-image: url("../img/fantasyCloudBackground_fakeTransparent_small.webp");
+	line-height: 1.5;
+	margin: 0 auto;
+	padding: 10px;
+	word-break: break-word;
+}
+
+a {
+	color: black;
+}
+
+#title {
+	padding: 5px;
+	font-size: 180%;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+}
+
+
+header {
+	column-gap: 15px;
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
+}
+
+header * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.content {
+	max-width: 700px;
+	margin: auto;
+	min-height: 400px;
+	overflow: clip;
+	box-shadow: rgba(255, 255, 255, 0.77) 0 0 50px,
+		inset rgba(255, 255, 255, 0.37) 0 0 10px 10000px;
+	border-radius: 33px;
+}
+
+#next-event td {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+/* CTA Button */
+.myButton {
+	box-shadow: inset 0px 1px 0px 0px #caefab;
+	background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color: #77d42a;
+	border-radius: 6px;
+	border: 1px solid #268a16;
+	display: inline;
+	cursor: pointer;
+	color: #306108;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #aade7c;
+}
+
+.mobile-content .myButton {
+	width: 50%;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color: #5cb811;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+/* CTA Button END */
+
+/* Hamburger Menu */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style-type: none;
+	margin: 20px;
+	padding: 0;
+	word-break: break-word;
+}
+
+nav>a {
+
+	overflow: hidden;
+	text-decoration: none;
+	font-size: 20px;
+	white-space: pre;
+}
+
+
+nav>a:not(:last-child) {
+	margin-right: 30px;
+}
+
+
+nav>a:hover {
+	font-weight: bold;
+}
+
+
+.menu-button-container {
+	display: none;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: rgb(90, 90, 90);
+	height: 5px;
+	border-radius: 2px;
+}
+
+@keyframes hamburger-click {
+	from {
+		background-color: black;
+		height: 6px;
+
+	}
+
+	to {
+		background-color: rgb(90, 90, 90);
+		height: 5px;
+	}
+}
+
+.menu-button:active,
+.menu-button:active::before,
+.menu-button:active::after {
+	background-color: black;
+	height: 6px;
+}
+
+
+.menu-button:not(:active),
+.menu-button:not(:active)::before,
+.menu-button:not(:active)::after {
+
+	animation-name: hamburger-click;
+	animation-duration: 0.5s;
+}
+
+.menu-button {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu-button::before {
+	content: '';
+	position: relative;
+	top: -12px;
+}
+
+.menu-button::after {
+	content: '';
+	position: relative;
+	top: 6px;
+}
+
+/* Hamburger Menu END */
+
+.desktop-content {
+	display: static;
+}
+
+.mobile-content {
+	display: none;
+}
+
+footer {
+	padding-top: 50px;
+	font-size: 12px;
+	text-align: center;
+
+}
+
+/* Repeating design elements */
+
+.centered-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+}
+
+
+/* Repeating design elements END */
+
+
+/* Single used rules */
+
+#robert-image {
+	border-radius: 50%;
+}
+
+.social-ID {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 23px;
+	font-weight: normal;
+}
+
+
+/* Single used rules END */
